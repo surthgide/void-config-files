@@ -1,0 +1,39 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+[wifi]
+command=/home/$USER/.config/scripts/wifi
+label=☎ 
+interval=10
+
+[volume]
+command=/home/$USER/.config/scripts/volume
+label=♫ 
+interval=1
+signal=10
+mixer=default
+
+[backlight]
+command=/home/$USER/.config/scripts/backlight
+label=☀ 
+interval=1
+
+[battery]
+command=/home/$USER/.config/scripts/battery
+markup=pango
+interval=5
+
+[date]
+command=date '+%d-%m-%Y'
+label=◧ 
+interval=3600
+
+[time]
+#command=date '+%H:%M:%S'
+command=date '+%H:%M '
+label=◷ 
+interval=5

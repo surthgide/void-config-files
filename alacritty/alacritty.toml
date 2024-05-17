@@ -1,0 +1,7 @@
+import = [
+	"~/.config/alacritty/alacritty-theme/themes/aura.toml"
+]
+
+[font]
+normal = { family = "iosevka"}
+size = 7
